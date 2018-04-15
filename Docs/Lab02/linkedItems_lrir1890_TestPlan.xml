@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+	<testplan>
+		<name><![CDATA[lrir1890_TestPlan]]></name>
+		
+		
+<executables>
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[BVA_nonvalid]]></name>
+			<externalid><![CDATA[83]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[ECP_valid]]></name>
+			<externalid><![CDATA[85]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[ECP_nonvalid]]></name>
+			<externalid><![CDATA[86]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[BVA_valid]]></name>
+			<externalid><![CDATA[88]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+</executables>
+
+	</testplan>

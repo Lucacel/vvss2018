@@ -1,6 +1,8 @@
 package salariati.test;
 
 import static org.junit.Assert.*;
+
+import salariati.controller.UIController;
 import salariati.model.Employee;
 
 import org.junit.Before;
@@ -14,30 +16,44 @@ import salariati.enumeration.DidacticFunction;
 
 public class AddEmployeeTest {
 
-	private EmployeeRepositoryInterface employeeRepository;
-	private EmployeeController controller;
-	private EmployeeValidator employeeValidator;
-	
+	private UIController uiController;
+
 	@Before
 	public void setUp() {
-		employeeRepository = new EmployeeMock();
-		controller         = new EmployeeController(employeeRepository);
-		employeeValidator  = new EmployeeValidator();
+		EmployeeRepositoryInterface employeeRepository  = new EmployeeMock();
+		EmployeeController controller 					= new EmployeeController(employeeRepository);
+		EmployeeValidator employeeValidator 			= new EmployeeValidator();
+		uiController   									= new UIController(controller, employeeValidator);
 	}
-	
+
 	@Test
-	public void testRepositoryMock() {
-		assertFalse(controller.getEmployeesList().isEmpty());
-		assertEquals(6, controller.getEmployeesList().size());
+	public void testAddNewEmployee_BVA_nonvalid() {
+		String result;
+		result = uiController.addEmployee("LastName", "1960514135456", DidacticFunction.ASISTENT, "9");
+		assertEquals("Error to add: LastName;1960514135456;ASISTENT;9", result);
 	}
-	
+
 	@Test
-	public void testAddNewEmployee() {
-		Employee newEmployee = new Employee("ValidLastName", "1910509055057", DidacticFunction.ASISTENT, "3000");
-		assertTrue(employeeValidator.isValid(newEmployee));
-		controller.addEmployee(newEmployee);
-		assertEquals(7, controller.getEmployeesList().size());
-		assertTrue(newEmployee.equals(controller.getEmployeesList().get(controller.getEmployeesList().size() - 1)));
+	public void testAddNewEmployee_BVA_valid(){
+		String result;
+		result = uiController.addEmployee("LastName", "1960514135456", DidacticFunction.ASISTENT, "10");
+		assertEquals("Added: LastName;1960514135456;ASISTENT;10", result);
 	}
+
+
+	@Test
+	public void testAddNewEmployee_ECP_nonvalid() {
+		String result;
+		result = uiController.addEmployee("LastName", "1960514135456", DidacticFunction.ASISTENT, "-3000");
+		assertEquals("Error to add: LastName;1960514135456;ASISTENT;-3000", result);
+	}
+
+	@Test
+	public void testAddNewEmployee_ECP_valid(){
+		String result;
+		result = uiController.addEmployee("LastName", "1960514135456", DidacticFunction.ASISTENT, "3000");
+		assertEquals("Added: LastName;1960514135456;ASISTENT;3000", result);
+	}
+
 
 }

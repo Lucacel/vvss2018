@@ -26,7 +26,7 @@ public class UIController {
             return "Added: "+employee.toString();
         }
         else {
-            return "Error to add: "+employee+toString();
+            return "Error to add: "+employee.toString();
         }
 
     }

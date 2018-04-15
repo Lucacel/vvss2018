@@ -139,7 +139,7 @@ public class Employee {
 	 * @return if the given line is valid returns the corresponding Employee
 	 * @throws EmployeeException
 	 */
-	public Employee getEmployeeFromString(String _employee, int line) throws EmployeeException {
+	public static Employee getEmployeeFromString(String _employee, int line) throws EmployeeException {
 		Employee employee = new Employee();
 		
 		String[] attributes = _employee.split("[;]");
@@ -167,5 +167,6 @@ public class Employee {
 		
 		return employee;
 	}
+
 
 }

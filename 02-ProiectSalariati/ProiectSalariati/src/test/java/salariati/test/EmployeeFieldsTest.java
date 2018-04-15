@@ -1,18 +1,19 @@
 package salariati.test;
 
-import static org.junit.Assert.*;
-import salariati.model.Employee;
-
-import org.junit.*;
-
-import salariati.validator.EmployeeValidator;
+import org.junit.Before;
+import org.junit.Test;
 import salariati.enumeration.DidacticFunction;
+import salariati.model.Employee;
+import salariati.validator.EmployeeValidator;
+
+import static junit.framework.Assert.assertFalse;
+import static junit.framework.Assert.assertTrue;
 
 public class EmployeeFieldsTest {
 
 	private EmployeeValidator employeeValidator;
 	private Employee employee;
-	
+
 	@Before
 	public void setUp() {
 		employeeValidator = new EmployeeValidator();

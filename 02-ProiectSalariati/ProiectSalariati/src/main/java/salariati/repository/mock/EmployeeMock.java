@@ -19,12 +19,12 @@ public class EmployeeMock implements EmployeeRepositoryInterface {
 		employeeValidator = new EmployeeValidator();
 		employeeList = new ArrayList<Employee>();
 		
-		Employee Ionel   = new Employee("Pacuraru", "1234567890876", DidacticFunction.ASISTENT, "2500");
-		Employee Mihai   = new Employee("Dumitrescu", "1234567890876", DidacticFunction.LECTURER, "2500");
-		Employee Ionela  = new Employee("Ionescu", "1234567890876", DidacticFunction.LECTURER, "2500");
-		Employee Mihaela = new Employee("Pacuraru", "1234567890876", DidacticFunction.ASISTENT, "2500");
-		Employee Vasile  = new Employee("Georgescu", "1234567890876", DidacticFunction.TEACHER,  "2500");
-		Employee Marin   = new Employee("Puscas", "1234567890876", DidacticFunction.TEACHER,  "2500");
+		Employee Ionel   = new Employee("Pacuraru", "1051296890876", DidacticFunction.ASISTENT, "3500");
+		Employee Mihai   = new Employee("Dumitrescu", "1130394890876", DidacticFunction.LECTURER, "2500");
+		Employee Ionela  = new Employee("Ionescu", "2110494890876", DidacticFunction.LECTURER, "1500");
+		Employee Mihaela = new Employee("Pacuraru", "2120799890876", DidacticFunction.ASISTENT, "2500");
+		Employee Vasile  = new Employee("Georgescu", "1010370890876", DidacticFunction.TEACHER,  "1500");
+		Employee Marin   = new Employee("Puscas", "1020673890876", DidacticFunction.TEACHER,  "2500");
 		
 		employeeList.add( Ionel );
 		employeeList.add( Mihai );
@@ -50,7 +50,8 @@ public class EmployeeMock implements EmployeeRepositoryInterface {
 
 	@Override
 	public void modifyEmployee(Employee oldEmployee, Employee newEmployee) {
-		// TODO Auto-generated method stub
+		employeeList.remove(oldEmployee);
+		employeeList.add(newEmployee);
 	}
 
 	@Override

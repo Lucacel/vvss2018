@@ -38,7 +38,7 @@ public class UIController {
             if (e.getCnp().equals(CNP)){
                 Employee e2 = new Employee(e.getLastName(),e.getCnp(),function,e.getSalary());
                 employeeController.modifyEmployee(e,e2);
-                return "Employee: "+e+" modified to: "+e2;
+                return "Employee modified";
             }
         }
         return "Error employee not found";

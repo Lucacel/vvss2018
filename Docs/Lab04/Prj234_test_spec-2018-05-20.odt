@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>testspec Prj234 - lrir1890_IntT</title>
+<link type="text/css" rel="stylesheet" href="http://www.scs.ubbcluj.ro/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="http://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></div>
+<div class="doc_title"><p>Test Specification</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj234<br>Test Suite: Prj234 - lrir1890_IntT</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 20/05/2018</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><b><p style="padding-left: 20px;"><a href="#toc_1">1. lrir1890_IntT</a></p></b>
+<p style="padding-left: 45px;"><a href="#toc_tc24942">Prj234-194: BigBang</a></p><p style="padding-left: 45px;"><a href="#toc_tc24959">Prj234-196: WBT_Valid</a></p><p style="padding-left: 45px;"><a href="#toc_tc24944">Prj234-195: TopDown</a></p></div><h1 class="doclevel" >Scope</h1>
+<div class="txtlevel"><p>
+	Project for group 234.</p></div>
+ <br/><a name='toc_1'></a>
+<h1 class='doclevel'>1. Test Suite : lrir1890_IntT</h1>
+<div><p>
+	Suita de teste pentru Integrare</p>
+</div><a name="toc_tc24942"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-194: BigBang</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">lrir1890</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	unit_test cerinta 1 &gt; modul A</p>
+<p>
+	unit_test cerinta 2 &gt; modul B</p>
+<p>
+	unit_test cerinta 3 &gt; modul C</p>
+<p>
+	P&gt;A&gt;B&gt;C</p>
+</td></tr><tr><td colspan="3"><span class="label">Preconditions:</span><br /><p>
+	A, B, C</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >salariati.test.Integrare_Big_Bang#unit_test_combined</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >salariati.test.Integrare_Big_Bang</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">lrir1890_Req03:  cerinta 3<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc24959"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-196: WBT_Valid</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir1880</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >note.test.CalculeazaMediiTest#testD3</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >note.test.CalculeazaMediiTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc24944"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-195: TopDown</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">lrir1890</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	cerinta 1 &gt; modulul A</p>
+<p>
+	cerinta 2 &gt; modulul B</p>
+<p>
+	cerinta 3 &gt; modulul C</p>
+<p>
+	P&gt;A&gt;C&gt;B</p>
+</td></tr><tr><td colspan="3"><span class="label">Preconditions:</span><br /><p>
+	A,B,C</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">lrir1890_Req03:  cerinta 3<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+
+</body>
+</html>

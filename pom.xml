@@ -11,8 +11,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
     </plugins>
@@ -24,6 +24,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <serenity.version>1.8.0</serenity.version>
+    <webdriver.driver>firefox</webdriver.driver>
   </properties>
 
   <dependencies>
@@ -33,6 +35,11 @@
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.serenity-bdd</groupId>
+      <artifactId>serenity-junit-archetype</artifactId>
+      <version>1.8.0</version>
     </dependency>
 
   </dependencies>

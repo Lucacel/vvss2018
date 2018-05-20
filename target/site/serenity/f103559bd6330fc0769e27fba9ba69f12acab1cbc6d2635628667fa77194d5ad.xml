@@ -1,0 +1,6 @@
+<acceptance-test-run title="Should see inputs" name="should_see_inputs" steps="0" successful="0" failures="0" skipped="0" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="31" timestamp="2018-05-21T00:23:27.497+03:00">
+  <user-story id="salariati.test.TestWebSerenity" name="Test web serenity" path="salariati.test"/>
+  <tags>
+    <tag name="Test web serenity" type="story"/>
+  </tags>
+</acceptance-test-run>

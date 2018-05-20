@@ -13,7 +13,7 @@ import salariati.validator.EmployeeValidator;
 
 public class EmployeeImpl implements EmployeeRepositoryInterface {
 	
-	private final String employeeDBFile = "employeeDB/employees.txt";
+	private final String employeeDBFile = "E:\\Facultate\\VVSS2018\\vvss2018\\02-ProiectSalariati\\ProiectSalariati\\src\\main\\java\\employeeDB\\employees.txt";
 	private EmployeeValidator employeeValidator = new EmployeeValidator();
 
 	@Override

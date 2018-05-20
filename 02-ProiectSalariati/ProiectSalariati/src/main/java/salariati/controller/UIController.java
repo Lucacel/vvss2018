@@ -2,12 +2,10 @@ package salariati.controller;
 
 import salariati.enumeration.DidacticFunction;
 import salariati.model.Employee;
-import salariati.repository.interfaces.EmployeeRepositoryInterface;
 import salariati.validator.EmployeeValidator;
 
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Date;
 import java.util.List;
 
 public class UIController {
